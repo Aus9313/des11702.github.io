@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+    #ddr{
+        margin: 0 auto;
+        width: 70px;
+        height: 120px;
+    }
+    .ddr{
+        width: 10px;
+        height: 120px;
+        float: left;
+        margin: 2px;
+        background-color: #00ff00;
+        animation: loading 1s infinite ease-in-out;
+    }
+
+    .ddr2{
+        animation: loading 1s infinite ease-in-out;
+        animation-delay: -0.9s;
+    }
+    .ddr3{
+        animation: loading 1s infinite ease-in-out;
+        animation-delay: -0.8s;
+    }
+    .ddr4{
+        animation: loading 1s infinite ease-in-out;
+        animation-delay: -0.7s;
+    }
+    .ddr5{
+        animation: loading 1s infinite ease-in-out;
+        animation-delay: -0.6s;
+    }
+    @keyframes loading {
+        0%,100%{ 
+           transform: scaleY(0.5);
+           background-color: #00ff00;
+
+        }
+        20%{
+            transform: scaleY(1);
+            background-color: #1bc04d;
+        }
+    }
+    </style>
+
+</head>
+<body>
+        <div id="ddr">
+                <div class="ddr ddr1"></div>
+                <div class="ddr ddr2"></div>
+                <div class="ddr ddr3"></div>
+                <div class="ddr ddr4"></div>
+                <div class="ddr ddr5"></div>
+            </div>
+</body>
+</html>
