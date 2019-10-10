@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        .demo {
+        background: purple;
+        height: 300px;
+        width: 300px;
+        }
+
+        .demo div {font-size: 16px; color: white;}
+
+        @keyframes grow {
+        0% { font-size: 16px; color: white; width: 300px; background:purple;}
+        100% { font-size: 40px; color: black; width: 500px; background:aqua;}
+        }
+
+        .demo:hover .grows {
+        animation-name: grow;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        }
+
+        .demo:hover {
+            animation-name: grow;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            
+        }
+
+        .demo:hover .growsandstays {
+        animation-name: grow;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+<body>
+        <p>Move your mouse over the purple box!</p>
+        <div class="demo">
+         <div class="growsandstays">This grows and stays big.</div>
+          <div class="grows">This just grows.</div>
+        </div>
+</body>
+</html>
